@@ -1,0 +1,55 @@
+/* constants. :root selector represents the <html> element in the HTML pages */
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+ /* body and ul are selectors, below are the declarations. */
+ body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
+
+  /*
+ul {
+    font-family: helvetica;
+}
+*/
+li {
+    list-style: circle;
+  }
+  /* .list is a class selector, each HTML element that contains a class atribute set to list gets styles
+      defined within this selector */
+  .list {
+    list-style: square;
+  }
+
+  /* #msg is an ID selector, any HTML element that has its ID attribute set to #msg gets this attribute
+  #msg {
+    font-family: monospace;
+  } */
+
+  .light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+  }
+  .btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
