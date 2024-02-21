@@ -21,4 +21,5 @@ switcher.addEventListener('click', function() {
 
     // create hidden message that can be seen in Developer tools
     console.log('current class name: ' + className);
+    console.log('{Your name} + Azure course {###}')
 });
